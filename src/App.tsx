@@ -7,19 +7,19 @@ import { Camera } from 'lucide-react';
 import Fuse from 'fuse.js';
 
 function App() {
-  const [searchResults, setSearchResults] = useState<VideoMetadata[]>(mockVideos);
+  const [searchResults, setSearchResults] = useState<VideoMetadata[]>(Object.values(mockVideos));
 
   const handleSearch = (query: string, filters: string[]) => {
     // In a real application, this would make an API call with the query and filters
 
     // If the query is empty, return all videos
     if (!query.trim()) {
-      setSearchResults(mockVideos);
+      setSearchResults(Object.values(mockVideos));
       return;
     }
 
     // Perform fuzzy search using Fuse.js
-    const fuse = new Fuse(mockVideos, {
+    const fuse = new Fuse(Object.values(mockVideos), {
       keys: ['title', 'username', 'aiDescription', 'transcription', 'hashtags', 'detectedObjects', 'location'],
       includeScore: true,
       threshold: 0.5, // Adjust threshold for fuzziness (0 = exact match, 1 = very loose match)

@@ -16,6 +16,7 @@
 - AI-powered object and speech recognition  
 - Fast, fuzzy search with Fuse.js  
 - Seamless React + TypeScript frontend powered by Vite  
+- Spelling error lineance by performing fuzzy search using Fuse.js
 
 ---
 
@@ -35,7 +36,7 @@ cd VideoSearchAI
 - npm run dev OR npx vite (to Run the development server)
 ```
 
-press h + enter to show help
+then press h + enter to show help
 
 ## Shortcuts:
 ```bash
@@ -45,3 +46,11 @@ press h + enter to show help
   press c + enter to clear console
   press q + enter to quit
 ```
+
+## Meeting with Jackson from Meta
+- Elasta-search. -> infra that a lot of engineers want to work on.
+- Search indexer
+
+- Agolia -> key word chunks. 
+
+- Value is in improving the indexing as opposed to the fuzzy-search
