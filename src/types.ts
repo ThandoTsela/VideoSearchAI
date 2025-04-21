@@ -15,3 +15,7 @@ export interface VideoMetadata {
   };
   detectedObjects: string[];
 }
+
+export type VideoMetadataDict = {
+  [url: string]: VideoMetadata;
+};

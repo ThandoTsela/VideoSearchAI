@@ -1,0 +1,12 @@
+# These are the URLs of videos to generate aiDescriptions for using llama3
+# the videoAnalysis.py file will process these URLs
+
+# Test with different video types
+test_urls = [
+    "https://www.youtube.com/watch?v=LVQwUj1qP8s&t=3s&ab_channel=HealthcareTriage",  # Regular YouTube - Healthcare
+    "https://www.youtube.com/shorts/tPNKE6vZoQ8",  # YouTube Shorts - barrista coffee
+    "https://www.instagram.com/reel/DCRvQ5MuIWy/?utm_source=ig_web_copy_link",  # Instagram Reel - workout push ups
+    "https://www.youtube.com/shorts/yQ121gMqsik", # YouTube Shorts - berkowitz introduction
+    "https://www.youtube.com/shorts/t5Of0H583D8", #Youtube - Yoga on beach
+    "https://www.youtube.com/watch?v=yY9U89S-Wig&ab_channel=zap" #Youtube video - AzizDrives talking about gemera
+]
